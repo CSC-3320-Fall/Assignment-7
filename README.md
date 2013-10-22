@@ -5,6 +5,8 @@ Prove You can use github
 
 Step 1. Clone this repo
 
+Step 1.5 git remote set-url origin https://<Your username here>@github.com/CSC-3320-Fall/Assignment6.git
+
 Step 2. Make a new directory with you CAMPUSID username.
 
 Step 3. Write a short hello world C language program in YOUR directory.
