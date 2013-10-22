@@ -9,7 +9,7 @@ Step 1.5
 	run if using snowball:
 ```
 git remote set-url origin https://<Your username here>@github.com/CSC-3320-Fall/Assignment6.git
-unset SHH_ASKPASS
+unset SSH_ASKPASS
 ```
 
 
