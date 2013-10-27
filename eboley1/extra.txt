@@ -1,0 +1,13 @@
+hello.c from rwh's directory works like this:
+
+
+The letters to be printed are indicated by their hexadecimal value. There are
+six lines in the for loop. Each line contains two characters represented in
+hexadecimal. For instance, the first line contains the letters e and h, in
+that order. Each line in the for loop also involves some arithmetic involving
+x, which is equal to the value of i, which is equal to zero the firs time
+through the for loop. The value for the first line is -1 on the first run
+through the for loop. The other lines are equal to zero. There is also an if
+loop inside the for loop that is executed after the values of the first six
+lines is evaluated. If the value of a line is negative, it is made positive.
+Then any line whose value that is greater than zero has the two characters,     represented by hexadecimal values, associated with it printed in reverse order. For instance, the first time through the for loop, line 1 evaluates to -1, all  the other lines evaluate to 0. Then the if loop makes -1 positive 1 the prints  he. i is incremented. Second time through the for loop line two evaluates to 1  while the other lines evaluate to 0. The if loop prints ll. and so on. 
