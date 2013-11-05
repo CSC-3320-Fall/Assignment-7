@@ -34,7 +34,7 @@ int main()
         c = getc (f);
         int cha;
             cha = c;
-            cha = (((c -97) - 3) % 26);
+            cha = (((c -97) - (topC - 101)) % 26);
             if(cha < 0)
                 cha = 26 + cha + 97;
             else
