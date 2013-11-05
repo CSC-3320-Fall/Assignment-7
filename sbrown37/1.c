@@ -6,7 +6,8 @@ int main( int argc, char **argv) {
     char buffer[1000];
     int alph[26] = {0};//initialize to all zeros
 
-    //read input file
+    //read input file Reading the input file is modified from Dr. Harrison's 
+    //Examples in this same repository.
     while( fgets( buffer, sizeof(buffer), stdin) != (char *)0) {
         int i,l;
         char c;
