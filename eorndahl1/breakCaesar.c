@@ -31,7 +31,7 @@ int main()
     fclose(f);
     f = fopen("/Users/eorndahl/Assignment7/text.one.encrypt" , "r");
     do {
-        c = getc (f); //get characters one by one from input stream f
+        c = getc (f);
         int cha;
             cha = c;
             cha = (((c -97) - 3) % 26);
