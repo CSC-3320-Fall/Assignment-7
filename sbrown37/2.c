@@ -28,8 +28,6 @@ int main( int argc, char **argv) {
         }
     }
 
-    //int greatestCo = 1;
-    //int greatestCoIndex = 0;//greatest will definately be above 0
     //measure the incidence of coincidence to find the period
     //shift once, twice...up to 10. 
     int ic[11]; 
@@ -62,7 +60,4 @@ int main( int argc, char **argv) {
             break;
         } 
     }
-
-
-    //printf("The period is: %d\n", greatestCoIndex);
 }
