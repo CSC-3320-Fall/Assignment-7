@@ -31,10 +31,8 @@ int main(int argc, char** argv)
     fclose(f);
     f = fopen(argv[1], "r");
     do {
-        c = getc (f); //get characters one by one from input stream f
-        int cha;
-        cha = c;
-        cha = (((c -97) - (topC - 101)) % 26);
+        c = getc (f); 
+        int cha = (((c -97) - (topC - 101)) % 26);
         if(cha < 0)
             cha = 26 + cha + 97;
         else
