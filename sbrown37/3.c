@@ -48,7 +48,7 @@ int main( int argc, char **argv) {
 
     //linear search over 2d array for the highest number in each row
     //the index found corresponds to the most frequent letter in each row
-    //I had to later this to find the the last occurence of the largest
+    //I had to alter this to find the the last occurrence of the largest
     //number because the 4th characters had 2 letters that tied for
     //most frequent
     for(i=0; i<PERIOD; i++) {
@@ -62,7 +62,7 @@ int main( int argc, char **argv) {
     printf("\n%s \n", "The key is:");
 
     //take the most frequent letter to be e, subtract e's correct position (4, 
-    //if 0 indexed) to get the offest key, add to 26 and % with 26 to account
+    //if 0 indexed) to get the offset key, add to 26 and % with 26 to account
     //for negative values
     //do this for each key
     for(i=0; i<PERIOD; i++) {

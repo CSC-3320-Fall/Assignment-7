@@ -53,7 +53,7 @@ int main( int argc, char **argv) {
         printf("\n");
     }
 
-    //find the first peak that approaches 0.06 to get the peroid
+    //find the first peak that approaches 0.06 to get the period
     for(i=1; i<11; i++) {
         if (ic[i]/(double)wTCount > 0.05) {
             printf("\nIt appears that the period is %d \n\n", i);
