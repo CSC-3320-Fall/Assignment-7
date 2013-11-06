@@ -1,27 +1,32 @@
-i———————————————————————————————————————————————————————————————————————————
+——————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————
+
 1)
 
 The key for this sample was h or the right shift of 3 spaces.
 
 Here is the decoded text:
 
-ooowhatisufferinthatwaynotonguecantellfrommyearliestinfancyiohavebeenamartyrtoitasaboythediseasehardlyeverleftmeforoadaytheydidnotknowthenthatitwasmylivermedicalscienceowasinafarlessadvancedstatethannowandtheyusedtoputitdownotolazinessoowhyyouskulkinglittledevilyoutheywouldsaygetupanddoosomethingforyourlivingcantyounotknowingofcoursethatiowasillooandtheydidntgivemepillstheygavemeclumpsonthesideoftheoheadandstrangeasitmayappearthoseclumpsontheheadoftenocuredmeforthetimebeingihaveknownoneclumpontheheadhaveomoreeffectuponmyliverandmakemefeelmoreanxioustogostraightoawaythenandthereanddowhatwaswantedtobedonewithoutfurtherolossoftimethanawholeboxofpillsdoesnowooyouknowitoftenissothosesimpleoldfashionedremediesareosometimesmoreefficaciousthanallthedispensarystuffood
+ooowhatisufferinthatwaynotonguecantellfrommyearliestinfancyiohavebeenamartyrtoitasaboythe
+diseasehardlyeverleftmeforoadaytheydidnotknowthenthatitwasmylivermedicalscienceowasinafar
+lessadvancedstatethannowandtheyusedtoputitdownotolazinessoowhyyouskulkinglittledevilyouthey
+wouldsaygetupanddoosomethingforyourlivingcantyounotknowingofcoursethatiowasillooandtheydidnt
+givemepillstheygavemeclumpsonthesideoftheoheadandstrangeasitmayappearthoseclumpsontheheadoften
+ocuredmeforthetimebeingihaveknownoneclumpontheheadhaveomoreeffectuponmyliverandmakemefeelmore
+anxioustogostraightoawaythenandthereanddowhatwaswantedtobedonewithoutfurtherolossoftimethana
+wholeboxofpillsdoesnowooyouknowitoftenissothosesimpleoldfashionedremediesareosometimesmoreefficacious
+thanallthedispensarystuffood
 
-———————————————————————————————————————————————————————————————————————————
 
-2)
-
-The largest period is 8
+——————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————
 
 
-———————————————————————————————————————————————————————————————————————————
-
-3)
+2/3)
 
 Key Search…
 
 While the other potential sizes are... (disregard 0's)
 
+8
 4
 2
 1
@@ -51,4 +56,5 @@ Row 1's most frequent letter shifted is... i
 A period of one gives...
 Row 1's most frequent letter shifted is... i
 
-Due to the apparent pattern given a larger sample size with a keysize of 4 I think it is logical to conclude that the key is eijk.
+Due to the apparent pattern given a larger sample size with a keysize of 4 I think it is logical 
+to conclude that the key is eijk.
