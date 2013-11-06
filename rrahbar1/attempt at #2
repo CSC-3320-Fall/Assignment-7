@@ -1,0 +1,47 @@
+couldn't get it to push without erasing so i just wanted to share my thoughts on how i attempted #2. 
+
+
+#include<stdio.h>
+
+/*this program is supposed to take in the text.two.encrypted
+ *file and with the function find the period
+ *it should do so by enciphering the first letter of the file
+ *and then continuing until so, and then the sequence is repeated
+ *with that key. assuming the key length then average out the incidence
+ *of coincidence to see the highest which will be the location
+ */
+
+int main() {
+
+        int d = 0;
+        FILE *p;
+        int num = 0;
+        int ic = 0;
+        int den = 0;
+        int alpha[26] = {0};
+
+        p = fopen("/home/local/GSUAD/rwh/assignment7/text.two.encrypt", "r");
+        
+         while (d = fgetc(p) != EOF)             //run till end
+        {
+                if (d  >= 'a' && d <= 'z')      //if current is between a and z
+                {
+                        alpha[d-'a'] +=1;    //get next alpha char
+                }
+        d++;
+        }
+
+        //figuring out incidence of coincidence
+        for (int i=0; i< 26; i++)
+        {
+                num += alpha[i] * (alpha[i] -1);
+        }
+        den = d * (d - 1);
+        ic = num/den;
+
+/*it should then compare to see which incidence of coincidence is highest
+ * to then be able to print the period. */
+
+        fclose(p);
+        return 0;
+}

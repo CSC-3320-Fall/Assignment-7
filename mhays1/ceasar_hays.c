@@ -3,6 +3,7 @@
  * First prints out the key and then prints the decrypted file to standard output.
  * However, I'm having problems with x's, y's and z's
  *other than that^ it should be good
+ * author: Mark Hays
  */
 
 #include <stdio.h>
