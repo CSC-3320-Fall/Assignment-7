@@ -21,34 +21,34 @@ void PrintCipher(char *cipher, int shift)
 
 //credit to "greggory.hz"
 //http://codereview.stackexchange.com/questions/7552/finding-the-most-frequent-character-in-a-string
-char MostCommonUsedChar(char *str, int length) 
+char MostCommonUsedChar(char *str) 
 {
-	char holder[26];
+	char buffer[26];
 	int i;
 	for (i = 0; i < 26; i++) 
 	{
-		holder[i] = 0;
+		buffer[i] = 0;
 	}
 	
 	int x;
-	for (x = 0; x < length; x++) 
+	for (x = 0; x < strlen(str); x++) 
 	{
-		holder[str[x]-97] += 1;
+		buffer[str[x] - 97] += 1;
 	}
 	
-	char b = 97;
-	int count = holder[0];
+	char returnVal = 97;
+	int ct = buffer[0];
 	int t;
 	for (t = 1; t < 26; t++) 
 	{
-		if (holder[t] > count) 
+		if (buffer[t] > ct) 
 		{
-		count = holder[t];
-		b = t+97;
+			ct = buffer[t];
+			returnVal = t + 97;
 		}
 	}
 
-	return b;
+	return returnVal;
 }
 int main(int argc, char **argv)
 {
