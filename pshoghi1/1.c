@@ -6,20 +6,6 @@
 #define LETTER_E 101
 #define ALL_CHAR 256
 
-/*int GetMax(int count[26])
-{
-	int max = 0;
-	int i;
-	for (i = 0; i < 26; i++)
-	{
-		if (count[i] > count[max])
-		{
-			max = i;
-		}
-	}
-	return (max - (LETTER_E - LETTER_A));
-}*/
-
 void PrintCipher(char *cipher, int shift)
 {
 	int i = 0;
