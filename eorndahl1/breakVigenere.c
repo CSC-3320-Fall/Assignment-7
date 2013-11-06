@@ -123,7 +123,7 @@ int main(int argc, char** argv)
     counter = 0;
 
     //decodes cypher. I didn't manage to make this streamline so the key is manually entered in here. The other
-    //commented out areas give the code however. Their output is in my text file.
+    //commented out areas give the key however. Their output is in my text file.
     do {
         c = getc (f); //get characters one by one from input stream f
         if(c != '\n') {
