@@ -115,9 +115,7 @@ int main(int argc, char** argv)
 //    analyze(2, counter);
 //    printf("\nA period of one gives...\n");
 //    analyze(1, counter);
-  
 
-    //printf("The key for this sample was %c or the right shift of %d spaces.\n\nHere is the decoded text:\n\n", topC, topC - 101);
     fclose(f);
     f = fopen(argv[1], "r");
     counter = 0;
