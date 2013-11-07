@@ -8,10 +8,10 @@ int main(){
 	if(fp == NULL){
 		printf("File not found.\n");
 	}
-	ch=fgetc(fp);
+	ch=fgetc(fp); //reads the file character by character
 	while(ch != EOF){
 		c = 0;
-		while(alpha1[c] != '\0'){
+		while(alpha1[c] != '\0'){ //ensures it doesn't go past 'z'
 			if(alpha1[c] == ch){
 				count[c]++;
 			}
@@ -20,6 +20,7 @@ int main(){
 			}
 		}
 	}
+	fclose(fp);
 	max = count[0];
 	for(c = 0; c< 27; c++){
 		if(count[c] > max){
