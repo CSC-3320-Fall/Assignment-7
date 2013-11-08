@@ -1,0 +1,40 @@
+part1: Josephine Ntamushobora
+
+#include <stdio.h>
+#include <stdlib.h>
+int main()
+{
+    char ch;
+    char file_name[9] = "text.one";
+    FILE *fp;
+int i=0,j=0, counter[26]={0};
+    fp = fopen(file_name, "r+");//open my file to be read
+
+    while( ( ch = fgetc(fp) ) != EOF ) // from the beggining to the end of the file
+    {
+
+        counter[ch-97]++;// I subtract 97 because lowercase letter 'a' in ASCII is represented by 97, in this way I know that count at position 0 represents a and so on and so forth
+
+
+}
+int maxcount=0 ;
+int value1;
+char value2;
+for (j=0; j< 26; j++)// ind the most frequent letter which represents 'e'
+{
+if ( counter[j]>maxcount)
+{
+maxcount=counter[j];
+value1=j;
+value2=value1+97;
+}
+}
+
+int key= value2-101;// subtract the ASCII position of e which is 101 from the ASCCI position of the most frequent character
+printf("I do work! my key is %d\t", key);
+
+  fclose(fp);// close the file
+
+return 0;
+
+}
