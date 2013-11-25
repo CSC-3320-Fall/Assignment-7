@@ -1,0 +1,4 @@
+You hard coded in the file locations. You were instructed to take the file from std in.
+Part two returns a float, which is a bit odd. Period shoudl eb an int. Part 2 is wrong. There is not a magic forumula.
+the solved for key is wrong
+Part three is wrong.

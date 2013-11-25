@@ -1,0 +1,6 @@
+1. Looks Good
+2. Got the key length right
+3. got the keys wrong
+
+new3 segfaults
+You hardcoded your file paths, you were suppose to take stdin
