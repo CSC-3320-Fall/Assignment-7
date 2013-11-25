@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 Assigment6
 ==========
 
@@ -93,4 +92,3 @@ Hints: Write out the pseudocode if you are confused what to do. A little
 forethought in designing the counting/maximum parts of finding the first problem 
 (i.e. using C functions for them) will make the problem easy. fgets() is
 probably the best way to read each line in.
->>>>>>> d107d23b4d695adfbb4d79ff460f9f11dcef950a
