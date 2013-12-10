@@ -10,15 +10,13 @@ float coincidence (int arr[], int length) { //computes coincidence rate
     return coin;
 }
 
-void analyze(int charSpace, int length) {
+void analyze(FILE *f, int charSpace, int length) {
     int c,z,i , counter = 0, innerCounter = 0;
     int top = 0, count[26]={0};
     char topC, ch = 97;
     char c1[5000];
-    FILE *f;
     
     for(z = charSpace; z > 0; z--) {
-        f = fopen("/Users/eorndahl/Assignment7/text.two.encrypt", "r"); //I wasn't sure how to pass a FILE
         counter = 0;                                                     // so this won't work w/o changing
         innerCounter = 0;
         top = 0;
@@ -72,7 +70,7 @@ int main(int argc, char** argv)
     int c, counter = 0, count[26] = {0};
     
     /* opening file for reading */
-    f = fopen("/Users/eorndahl/Assignment7/text.two.encrypt" , "r");
+    f = fopen(argv[1] , "r");
     if(f == NULL) {
         perror("Error opening file");
         return(-1);
@@ -108,18 +106,18 @@ int main(int argc, char** argv)
 /* Let's experiment with the different periods. Putting them into a function that analyzes each column in the period.*/
     
     printf("\nA period of eight gives...\n");
-    analyze(8, counter);
+    analyze(f, 8, counter);
     printf("\nA period of four gives...\n");
-    analyze(4, counter);
+    analyze(f, 4, counter);
     printf("\nA period of two gives...\n");
-    analyze(2, counter);
+    analyze(f, 2, counter);
     printf("\nA period of one gives...\n");
-    analyze(1, counter);
-  
+    analyze(f, 1, counter);
+
 
     //printf("The key for this sample was %c or the right shift of %d spaces.\n\nHere is the decoded text:\n\n", topC, topC - 101);
     fclose(f);
-    f = fopen("/Users/eorndahl/Assignment7/text.two.encrypt", "r");
+    f = fopen(argv[1], "r");
     counter = 0;
 
     //decodes cypher. I didn't manage to make this streamline so the key is manually entered in here. The other
