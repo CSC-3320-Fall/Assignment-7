@@ -18,7 +18,7 @@ void analyze(int charSpace, int length) {
     FILE *f;
     
     for(z = charSpace; z > 0; z--) {
-        f = fopen("/Users/eorndahl/Assignment7/text.two.encrypt" , "r"); //I wasn't sure how to pass a FILE
+        f = fopen("/Users/eorndahl/Assignment7/text.two.encrypt", "r"); //I wasn't sure how to pass a FILE
         counter = 0;                                                     // so this won't work w/o changing
         innerCounter = 0;
         top = 0;
@@ -29,7 +29,7 @@ void analyze(int charSpace, int length) {
                 counter++;
                 continue;
             }
-            if(z != charSpace & counter == charSpace - z) {
+            if(z != charSpace && counter == charSpace - z) {
                 c1[innerCounter] = c;
                 innerCounter++;
                 counter++;
@@ -72,7 +72,7 @@ int main(int argc, char** argv)
     int c, counter = 0, count[26] = {0};
     
     /* opening file for reading */
-    f = fopen(argv[1] , "r");
+    f = fopen("/Users/eorndahl/Assignment7/text.two.encrypt" , "r");
     if(f == NULL) {
         perror("Error opening file");
         return(-1);
@@ -101,45 +101,47 @@ int main(int argc, char** argv)
             keyList[i] = new;
         }
     }
-//    printf("While the other potential sizes are... (disregard 0's)\n\n");
-//    for(int i = 0; i < 5; i++)
-//        printf("%d\n", keyList[i]);
+    printf("While the other potential sizes are... (disregard 0's)\n\n");
+    for(int i = 0; i < 5; i++)
+        printf("%d\n", keyList[i]);
     
 /* Let's experiment with the different periods. Putting them into a function that analyzes each column in the period.*/
     
-//    printf("\nA period of eight gives...\n");
-//    analyze(8, counter);
-//    printf("\nA period of four gives...\n");
-//    analyze(4, counter);
-//    printf("\nA period of two gives...\n");
-//    analyze(2, counter);
-//    printf("\nA period of one gives...\n");
-//    analyze(1, counter);
+    printf("\nA period of eight gives...\n");
+    analyze(8, counter);
+    printf("\nA period of four gives...\n");
+    analyze(4, counter);
+    printf("\nA period of two gives...\n");
+    analyze(2, counter);
+    printf("\nA period of one gives...\n");
+    analyze(1, counter);
+  
 
+    //printf("The key for this sample was %c or the right shift of %d spaces.\n\nHere is the decoded text:\n\n", topC, topC - 101);
     fclose(f);
-    f = fopen(argv[1], "r");
+    f = fopen("/Users/eorndahl/Assignment7/text.two.encrypt", "r");
     counter = 0;
 
     //decodes cypher. I didn't manage to make this streamline so the key is manually entered in here. The other
-    //commented out areas give the key however. Their output is in my text file.
+    //commented out areas give the code however. Their output is in my text file.
     do {
         c = getc (f); //get characters one by one from input stream f
         if(c != '\n') {
-            if(counter % 4 == 0) { //First key
-            int cha = (((c - 97) - (101 - 97)) % 26);
-            if(cha < 0)
-                cha = 26 + cha + 97;
-            else
-                cha = cha +97;
-            printf("%c", (char)cha); 
+            if(counter % 4 == 0) {
+        int cha = (((c - 97) - (101 - 97)) % 26);
+        if(cha < 0)
+            cha = 26 + cha + 97;
+        else
+            cha = cha +97;
+        printf("%c", (char)cha); // and print with the found shift
             }
-            if((counter - 1) % 4 == 0 || counter == 1) { //Second...
+            if((counter - 1) % 4 == 0 || counter == 1) {
                 int cha = (((c - 97) - (105 - 97)) % 26);
                 if(cha < 0)
                     cha = 26 + cha + 97;
                 else
                     cha = cha +97;
-                printf("%c", (char)cha); 
+                printf("%c", (char)cha); // and print with the found shift
             }
             if((counter - 2) % 4 == 0 || counter == 2) {
                 int cha = (((c - 97) - (106 - 97)) % 26);
@@ -147,7 +149,7 @@ int main(int argc, char** argv)
                     cha = 26 + cha + 97;
                 else
                     cha = cha +97;
-                printf("%c", (char)cha); 
+                printf("%c", (char)cha); // and print with the found shift
             }
             if((counter -3 ) % 4 == 0|| counter  == 3) {
                 int cha = (((c - 97) - (107 - 97)) % 26);
@@ -155,7 +157,7 @@ int main(int argc, char** argv)
                     cha = 26 + cha + 97;
                 else
                     cha = cha +97;
-                printf("%c", (char)cha); 
+                printf("%c", (char)cha); // and print with the found shift
             }
         counter++;
         }
